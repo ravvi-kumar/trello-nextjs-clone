@@ -1,4 +1,4 @@
-import { Column, TypedColumn, Todo } from "@/typings";
+import { Column, TypedColumn, Todo, Board } from "@/typings";
 
 
 export const getTodosGroupedByColumn = async () => {
