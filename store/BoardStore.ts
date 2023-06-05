@@ -24,7 +24,7 @@ interface BoardState {
 }
 
 export const useBoardStore = create<BoardState>(
-  persist(
+
     (set, get) => ({
       board: {
         columns: new Map<TypedColumn, Column>(),
@@ -83,9 +83,8 @@ export const useBoardStore = create<BoardState>(
       image: null,
 
       setImage: (image) => set({ image }),
-    }),
-    {
-      name: "Board",
-    }
-  )
+    })
+    
+      
+
 );
