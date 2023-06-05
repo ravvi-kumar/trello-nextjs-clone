@@ -1,5 +1,5 @@
 import { getTodosGroupedByColumn } from "@/lib/getTodosGroupedByColumn";
-import { Board, Todo, TypedColumn } from "@/typings";
+import { Board, Todo, TypedColumn, Column} from "@/typings";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 interface BoardState {
