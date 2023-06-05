@@ -1,7 +1,8 @@
-import { Column, TypedColumn } from "@/typings";
+import { Column, TypedColumn, Todo } from "@/typings";
+
 
 export const getTodosGroupedByColumn = async () => {
-  const todos = [];
+  const todos:Todo[] = [];
 
   const columns = todos.reduce((acc, todo) => {
     if (!acc.get(todo.status)) {
